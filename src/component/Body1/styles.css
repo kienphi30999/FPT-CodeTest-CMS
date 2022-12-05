@@ -1,0 +1,72 @@
+.body1-wrapper {
+  width: 100%;
+  height: 984px;
+  background-color: url(../../gradient.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body1-wrapper .body1 {
+  width: 70%;
+  height: 636px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body1-wrapper .body1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 142px;
+}
+.body1-wrapper .body1-left--top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+.body1-wrapper .body1-left--top--text1 {
+  font-weight: 600;
+  font-size: 72px;
+  color: #132238;
+}
+.body1-wrapper .body1-left--top--text2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #556070;
+}
+.body1-wrapper .body1-left--top--text3 {
+  width: 126px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a53dff;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+.body1-wrapper .body1-left--bot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.body1-wrapper .body1-left--bot--card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgba(237, 216, 255, 0.5);
+  width: 216px;
+  padding: 10px 0px;
+}
+.body1-wrapper .body1-left--bot--card--text1 {
+  font-size: 32px;
+  text-align: center;
+  color: #424e60;
+}
+.body1-wrapper .body1-left--bot--card--text2 {
+  font-size: 16px;
+  text-align: center;
+  color: #697484;
+}
+/*# sourceMappingURL=styles.css.map */

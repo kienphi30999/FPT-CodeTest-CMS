@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.less";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Header from "./component/Header";
+import Body1 from "./component/Body1";
+import Body2 from "./component/Body2";
+import Footer from "./component/Footer";
+
+const App = () => (
+  <div className="wrapper">
+    <Header />
+    <Body1 />
+    <Body2 />
+    <Footer />
+  </div>
+);
 
 export default App;
