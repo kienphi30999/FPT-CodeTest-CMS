@@ -1,7 +1,9 @@
 .body1-wrapper {
   width: 100%;
   height: 984px;
-  background-color: url(../../gradient.jpg);
+  background-image: url(images/gradient.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 142px;
+  width: 50%;
 }
 .body1-wrapper .body1-left--top {
   display: flex;
@@ -63,10 +66,22 @@
   font-size: 32px;
   text-align: center;
   color: #424e60;
+  font-weight: bold;
 }
 .body1-wrapper .body1-left--bot--card--text2 {
   font-size: 16px;
   text-align: center;
   color: #697484;
+}
+.body1-wrapper .body1-right--wrapper {
+  width: 30%;
+  height: 636px;
+  border-radius: 25px;
+}
+.body1-wrapper .body1-right--wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=styles.css.map */

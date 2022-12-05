@@ -1,7 +1,9 @@
 import React from "react";
 import "./styles.css";
+import { Button } from "antd";
+import { BsArrowRightShort } from "react-icons/bs";
 
-import footer1 from "../../footer1.png";
+import footer1 from "images/footer1.png";
 
 const Footer = () => (
   <div className="footer-wrapper">
@@ -15,7 +17,7 @@ const Footer = () => (
       </div>
       <div className="footer-body">
         <div className="footer-body--card">
-          <img src={footer1} />
+          <img src={footer1} alt="" />
           <div className="footer-body--card--bot">
             <div className="text1">UI-UX DESIGN</div>
             <div className="text2">Product Admin Dashboard</div>
@@ -23,11 +25,16 @@ const Footer = () => (
               Vivamus eleifend convallis ante, non pharetra libero molestie
               laoreet. Donec id imperdiet lacus.
             </div>
-            <div className="text4">Case Study</div>
+            <Button
+              icon={<BsArrowRightShort style={{ fontSize: 30 }} />}
+              className="text4"
+            >
+              Case Study
+            </Button>
           </div>
         </div>
         <div className="footer-body--card">
-          <img src={footer1} />
+          <img src={footer1} alt="" />
           <div className="footer-body--card--bot">
             <div className="text1">UI-UX DESIGN</div>
             <div className="text2">Product Admin Dashboard</div>
@@ -35,11 +42,16 @@ const Footer = () => (
               Vivamus eleifend convallis ante, non pharetra libero molestie
               laoreet. Donec id imperdiet lacus.
             </div>
-            <div className="text4">Case Study</div>
+            <Button
+              icon={<BsArrowRightShort style={{ fontSize: 30 }} />}
+              className="text4"
+            >
+              Case Study
+            </Button>
           </div>
         </div>
         <div className="footer-body--card">
-          <img src={footer1} />
+          <img src={footer1} alt="" />
           <div className="footer-body--card--bot">
             <div className="text1">UI-UX DESIGN</div>
             <div className="text2">Product Admin Dashboard</div>
@@ -47,11 +59,16 @@ const Footer = () => (
               Vivamus eleifend convallis ante, non pharetra libero molestie
               laoreet. Donec id imperdiet lacus.
             </div>
-            <div className="text4">Case Study</div>
+            <Button
+              icon={<BsArrowRightShort style={{ fontSize: 30 }} />}
+              className="text4"
+            >
+              Case Study
+            </Button>
           </div>
         </div>
         <div className="footer-body--card">
-          <img src={footer1} />
+          <img src={footer1} alt="" />
           <div className="footer-body--card--bot">
             <div className="text1">UI-UX DESIGN</div>
             <div className="text2">Product Admin Dashboard</div>
@@ -59,11 +76,16 @@ const Footer = () => (
               Vivamus eleifend convallis ante, non pharetra libero molestie
               laoreet. Donec id imperdiet lacus.
             </div>
-            <div className="text4">Case Study</div>
+            <Button
+              icon={<BsArrowRightShort style={{ fontSize: 30 }} />}
+              className="text4"
+            >
+              Case Study
+            </Button>
           </div>
         </div>
         <div className="footer-body--card">
-          <img src={footer1} />
+          <img src={footer1} alt="" />
           <div className="footer-body--card--bot">
             <div className="text1">UI-UX DESIGN</div>
             <div className="text2">Product Admin Dashboard</div>
@@ -71,11 +93,16 @@ const Footer = () => (
               Vivamus eleifend convallis ante, non pharetra libero molestie
               laoreet. Donec id imperdiet lacus.
             </div>
-            <div className="text4">Case Study</div>
+            <Button
+              icon={<BsArrowRightShort style={{ fontSize: 30 }} />}
+              className="text4"
+            >
+              Case Study
+            </Button>
           </div>
         </div>
         <div className="footer-body--card">
-          <img src={footer1} />
+          <img src={footer1} alt="" />
           <div className="footer-body--card--bot">
             <div className="text1">UI-UX DESIGN</div>
             <div className="text2">Product Admin Dashboard</div>
@@ -83,13 +110,16 @@ const Footer = () => (
               Vivamus eleifend convallis ante, non pharetra libero molestie
               laoreet. Donec id imperdiet lacus.
             </div>
-            <div className="text4">Case Study</div>
+            <Button
+              icon={<BsArrowRightShort style={{ fontSize: 30 }} />}
+              className="text4"
+            >
+              Case Study
+            </Button>
           </div>
-        </div>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <div className="btn">More Project</div>
         </div>
       </div>
+      <div className="footer-btn">More Project</div>
     </div>
   </div>
 );

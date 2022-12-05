@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import Avt from "../../avt.png";
+import Avt from "images/avt.png";
 
 const Body1 = () => (
   <div className="body1-wrapper">
@@ -32,8 +32,8 @@ const Body1 = () => (
           </div>
         </div>
       </div>
-      <div className="body1-right">
-        <img src={Avt} />
+      <div className="body1-right--wrapper">
+        <img src={Avt} alt="" />
       </div>
     </div>
   </div>

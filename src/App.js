@@ -1,18 +1,17 @@
 import React from "react";
-import "./App.less";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./screen/Home";
+import PageNotFound from "./screen/PageNotFound";
 
-import Header from "./component/Header";
-import Body1 from "./component/Body1";
-import Body2 from "./component/Body2";
-import Footer from "./component/Footer";
-
-const App = () => (
-  <div className="wrapper">
-    <Header />
-    <Body1 />
-    <Body2 />
-    <Footer />
-  </div>
-);
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;

@@ -1,13 +1,15 @@
 import React from "react";
 import "./styles.css";
-import Avt from "../../avt2.png";
+import Avt from "images/avt2.png";
+import { Button } from "antd";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const Body2 = () => (
   <div className="body2-wrapper">
     <div className="body2">
       <div className="body2-card">
         <div className="body2-card--left">
-          <img src={Avt} />
+          <img src={Avt} alt="" />
         </div>
         <div className="body2-card--right">
           <div className="body2-card--right--text1">
@@ -26,7 +28,12 @@ const Body2 = () => (
           </div>
           <div className="body2-card--right--text3">
             <div className="body2-card--right--text3--btn1">My Project</div>
-            <div className="body2-card--right--text3--btn2">Download CV</div>
+            <Button
+              icon={<AiOutlineDownload style={{ fontSize: 30 }} />}
+              className="body2-card--right--text3--btn2"
+            >
+              Download CV
+            </Button>
           </div>
         </div>
       </div>
