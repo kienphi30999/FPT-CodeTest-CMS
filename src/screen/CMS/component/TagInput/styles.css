@@ -1,0 +1,9 @@
+.tag-input--wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.tag-input--value {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
