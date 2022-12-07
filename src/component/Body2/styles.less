@@ -36,6 +36,7 @@
         &--text1 {
           font-size: 38px;
           color: #132238;
+          font-weight: bold;
         }
         &--text2 {
           font-weight: 400;
@@ -47,7 +48,8 @@
           align-items: center;
           gap: 24px;
           &--btn1 {
-            width: 132px;
+            min-width: 145px;
+            max-width: 220px;
             height: 48px;
             display: flex;
             align-items: center;
@@ -57,15 +59,18 @@
             color: #ffffff;
           }
           &--btn2 {
-            width: 190px;
+            min-width: 190px;
+            max-width: 220px;
             height: 48px;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
             background: #ffffff;
             border: 1px solid #a53dff;
             border-radius: 4px;
             color: #a53dff;
+            font-weight: bold;
           }
         }
       }

@@ -1,7 +1,10 @@
 .body1-wrapper {
   width: 100%;
   height: 984px;
-  background-color: url(../../gradient.jpg);
+  background-image: url(images/gradient.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +18,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 142px;
+      gap: 60px;
+      width: 50%;
       &--top {
         display: flex;
         flex-direction: column;
@@ -32,7 +36,8 @@
           color: #556070;
         }
         &--text3 {
-          width: 126px;
+          min-width: 126px;
+          max-width: 170px;
           height: 48px;
           display: flex;
           align-items: center;
@@ -47,6 +52,7 @@
         display: flex;
         align-items: center;
         gap: 5px;
+        flex-wrap: wrap;
         &--card {
           display: flex;
           flex-direction: column;
@@ -58,6 +64,7 @@
             font-size: 32px;
             text-align: center;
             color: #424e60;
+            font-weight: bold;
           }
           &--text2 {
             font-size: 16px;
@@ -65,6 +72,17 @@
             color: #697484;
           }
         }
+      }
+    }
+    &-right--wrapper {
+      width: 30%;
+      height: 636px;
+      border-radius: 25px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
       }
     }
   }

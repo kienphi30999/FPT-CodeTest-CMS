@@ -1,1 +1,1 @@
-{"version":3,"sources":["styles.less"],"names":[],"mappings":"AAAA;EACE,SAAA;EACA,UAAA","file":"styles.css"}
+{"version":3,"sources":["https://fonts.googleapis.com/css?family=Work+Sans","styles.less"],"names":[],"mappings":"AAAA;EACE,aAAa,WAAb;EACA,kBAAA;EACA,gBAAA;EACA,kGAAkG,OAAO,WAAzG;;ACHF;EACE,SAAA;EACA,UAAA;EACA,aAAa,WAAb","file":"styles.css"}

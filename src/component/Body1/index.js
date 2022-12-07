@@ -1,42 +1,39 @@
 import React from "react";
 import "./styles.css";
-import Avt from "../../avt.png";
+import Avt from "images/avt.png";
 
-const Body1 = () => (
-  <div className="body1-wrapper">
-    <div className="body1">
-      <div className="body1-left">
-        <div className="body1-left--top">
-          <div className="body1-left--top--text1">
-            Hello, I’m Brooklyn Gilbert
+const Body1 = (props) => {
+  const { headerTitle, headerDescription, headerBtnText, headerStatistic } =
+    props;
+  return (
+    <div className="body1-wrapper">
+      <div className="body1">
+        <div className="body1-left">
+          <div className="body1-left--top">
+            <div className="body1-left--top--text1">{headerTitle}</div>
+            <div className="body1-left--top--text2">{headerDescription}</div>
+            <div className="body1-left--top--text3">{headerBtnText}</div>
           </div>
-          <div className="body1-left--top--text2">
-            I'm a Freelance UI/UX Designer and Developer based in London,
-            England. I strives to build immersive and beautiful web applications
-            through carefully crafted code and user-centric design.
-          </div>
-          <div className="body1-left--top--text3">Say Hello!</div>
-        </div>
-        <div className="body1-left--bot">
-          <div className="body1-left--bot--card">
-            <div className="body1-left--bot--card--text1">15 Y.</div>
-            <div className="body1-left--bot--card--text2">Experience</div>
-          </div>
-          <div className="body1-left--bot--card">
-            <div className="body1-left--bot--card--text1">250+</div>
-            <div className="body1-left--bot--card--text2">Project Completed</div>
-          </div>
-          <div className="body1-left--bot--card">
-            <div className="body1-left--bot--card--text1">58</div>
-            <div className="body1-left--bot--card--text2">Happy Client</div>
+          <div className="body1-left--bot">
+            {headerStatistic &&
+              headerStatistic.map((item, id) => (
+                <div key={id} className="body1-left--bot--card">
+                  <div className="body1-left--bot--card--text1">
+                    {item.stat}
+                  </div>
+                  <div className="body1-left--bot--card--text2">
+                    {item.unit}
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
-      </div>
-      <div className="body1-right">
-        <img src={Avt} />
+        <div className="body1-right--wrapper">
+          <img src={Avt} alt="" />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Body1;

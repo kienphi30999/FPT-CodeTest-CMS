@@ -24,7 +24,10 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #A53DFF;
+  background-color: #a53dff;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
 }
 .header-wrapper .header-avatar--name {
   font-weight: bold;
@@ -37,5 +40,12 @@
 }
 .header-wrapper .header-menu--item {
   font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.header-wrapper .header-menu--item:hover {
+  background-color: #a53dff;
+  color: #ffffff;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=styles.css.map */
