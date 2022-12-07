@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Avt from "images/avt.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Body1 = (props) => {
   const { headerTitle, headerDescription, headerBtnText, headerStatistic } =
@@ -29,7 +30,7 @@ const Body1 = (props) => {
           </div>
         </div>
         <div className="body1-right--wrapper">
-          <img src={Avt} alt="" />
+          <LazyLoadImage src={Avt} alt="" />
         </div>
       </div>
     </div>

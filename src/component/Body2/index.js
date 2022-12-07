@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
 import Avt from "images/avt2.png";
-import { Button } from "antd";
 import { AiOutlineDownload } from "react-icons/ai";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Body2 = (props) => {
   const { bodyTitle, bodyDescription, leftBodyBtnText, rightBodyBtnText } =
@@ -12,7 +12,7 @@ const Body2 = (props) => {
       <div className="body2">
         <div className="body2-card">
           <div className="body2-card--left">
-            <img src={Avt} alt="" />
+            <LazyLoadImage src={Avt} alt="" />
           </div>
           <div className="body2-card--right">
             <div className="body2-card--right--text1">{bodyTitle}</div>

@@ -2,8 +2,7 @@ import React from "react";
 import "./styles.css";
 import { Button } from "antd";
 import { BsArrowRightShort } from "react-icons/bs";
-
-import footer1 from "images/footer1.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const limit_constant = 3;
 
@@ -28,7 +27,7 @@ const Footer = (props) => {
           {cardState &&
             cardState.map((item, id) => (
               <div className="footer-body--card">
-                <img src={item.imageUrl} alt="" />
+                <LazyLoadImage src={item.imageUrl} alt="" />
                 <div className="footer-body--card--bot">
                   <div className="text1">{item.type}</div>
                   <div className="text2">{item.title}</div>

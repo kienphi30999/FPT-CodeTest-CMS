@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Input, Space, Button, Upload, message } from "antd";
 import { AiOutlineClose, AiOutlineUpload } from "react-icons/ai";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../../styles.css";
 
 const beforeUpload = (file) => {
@@ -13,7 +14,7 @@ const beforeUpload = (file) => {
 
 const CustomImg = (props) => {
   return props.value ? (
-    <img className="img-preview" src={props.value} alt="" />
+    <LazyLoadImage className="img-preview" src={props.value} alt="" />
   ) : null;
 };
 
