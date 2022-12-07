@@ -6,7 +6,7 @@ import "../../styles.css";
 
 const HeaderForm = () => {
   return (
-    <>
+    <div className="cms-wrapper--section">
       <div className="cms-wrapper--heading cms-heading--background">Header</div>
       <Form.Item
         rules={[
@@ -129,7 +129,7 @@ const HeaderForm = () => {
           );
         }}
       </Form.List>
-    </>
+    </div>
   );
 };
 

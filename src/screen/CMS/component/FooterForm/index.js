@@ -25,7 +25,7 @@ const FooterForm = (props) => {
     isLoad: false,
   });
   return (
-    <>
+    <div className="cms-wrapper--section">
       <div className="cms-wrapper--heading cms-heading--background">Footer</div>
       <Form.Item
         rules={[
@@ -193,7 +193,7 @@ const FooterForm = (props) => {
           );
         }}
       </Form.List>
-    </>
+    </div>
   );
 };
 

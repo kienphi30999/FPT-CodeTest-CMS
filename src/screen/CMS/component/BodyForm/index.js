@@ -4,7 +4,7 @@ import "../../styles.css";
 
 const BodyForm = () => {
   return (
-    <>
+    <div className="cms-wrapper--section">
       <div className="cms-wrapper--heading cms-heading--background">Body</div>
       <Form.Item
         rules={[
@@ -54,7 +54,7 @@ const BodyForm = () => {
       >
         <Input placeholder="Đoạn text cho button bên phải ở body" />
       </Form.Item>
-    </>
+    </div>
   );
 };
 
