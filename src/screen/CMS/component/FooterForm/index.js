@@ -26,7 +26,7 @@ const FooterForm = (props) => {
   });
   return (
     <>
-      <div className="cms-wrapper--heading">Footer</div>
+      <div className="cms-wrapper--heading cms-heading--background">Footer</div>
       <Form.Item
         rules={[
           {

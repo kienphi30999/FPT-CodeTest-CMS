@@ -5,7 +5,7 @@ import "../../styles.css";
 const BodyForm = () => {
   return (
     <>
-      <div className="cms-wrapper--heading">Body</div>
+      <div className="cms-wrapper--heading cms-heading--background">Body</div>
       <Form.Item
         rules={[
           {

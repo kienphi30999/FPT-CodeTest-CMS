@@ -52,27 +52,34 @@ const CMS = () => {
   return (
     <>
       {!loadingGetConfig ? (
-        <div className="cms-wrapper">
-          <Form
-            onFinish={handleSaveConfig}
-            // labelCol={{ span: 24 }}
-            // wrapperCol={{ span: 24 }}
-            layout="vertical"
-            form={form}
-          >
-            <div className="cms-wrapper--title">CMS</div>
-            <HeaderForm />
-            <BodyForm />
-            <FooterForm footerListCardWatch={footerListCardWatch} form={form} />
-          </Form>
-          <Button
-            onClick={() => form.submit()}
-            style={{ marginBottom: 50, marginTop: 20 }}
-            type="primary"
-            loading={loading}
-          >
-            Save
-          </Button>
+        <div className="cms-container">
+          <div className="cms-wrapper">
+            <Form
+              onFinish={handleSaveConfig}
+              // labelCol={{ span: 24 }}
+              // wrapperCol={{ span: 24 }}
+              layout="vertical"
+              form={form}
+            >
+              <div className="cms-wrapper--title cms-heading--background">
+                CMS
+              </div>
+              <HeaderForm />
+              <BodyForm />
+              <FooterForm
+                footerListCardWatch={footerListCardWatch}
+                form={form}
+              />
+            </Form>
+            <Button
+              onClick={() => form.submit()}
+              style={{ marginBottom: 50, marginTop: 20 }}
+              type="primary"
+              loading={loading}
+            >
+              Save
+            </Button>
+          </div>
         </div>
       ) : (
         <Loading />

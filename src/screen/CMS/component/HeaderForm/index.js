@@ -7,7 +7,7 @@ import "../../styles.css";
 const HeaderForm = () => {
   return (
     <>
-      <div className="cms-wrapper--heading">Header</div>
+      <div className="cms-wrapper--heading cms-heading--background">Header</div>
       <Form.Item
         rules={[
           {
