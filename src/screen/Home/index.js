@@ -14,7 +14,7 @@ const Home = () => {
   React.useEffect(() => {
     (async () => {
       await fetchApi(
-        "https://638df3824190defdb751f026.mockapi.io/config/1",
+        "/config/2",
         "GET",
         (res) => {
           if (res) {

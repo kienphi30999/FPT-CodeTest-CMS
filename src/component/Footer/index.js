@@ -29,7 +29,7 @@ const Footer = (props) => {
           {cardState &&
             cardState.map((item, id) => (
               <div className="footer-body--card">
-                <img src={footer1} alt="" />
+                <img src={item.imageUrl} alt="" />
                 <div className="footer-body--card--bot">
                   <div className="text1">{item.type}</div>
                   <div className="text2">{item.title}</div>

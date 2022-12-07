@@ -10,13 +10,13 @@ import Loading from "component/Loading";
 
 const CMS = () => {
   const [form] = Form.useForm();
+  const footerListCardWatch = Form.useWatch("footerListCard", form);
   const [loading, setLoading] = React.useState(false);
   const [loadingGetConfig, setLoadingGetConfig] = React.useState(false);
   const handleSaveConfig = async (values) => {
-    // values.id = 1;
     setLoading(true);
     await updateApi(
-      "https://638df3824190defdb751f026.mockapi.io/config/1",
+      "/config/2",
       "PUT",
       JSON.stringify(values),
       (res) => {
@@ -35,7 +35,7 @@ const CMS = () => {
     (async () => {
       setLoadingGetConfig(true);
       await fetchApi(
-        "https://638df3824190defdb751f026.mockapi.io/config/1",
+        "/config/2",
         "GET",
         (res) => {
           if (res) {
@@ -55,14 +55,15 @@ const CMS = () => {
         <div className="cms-wrapper">
           <Form
             onFinish={handleSaveConfig}
-            labelCol={{ span: 24 }}
-            wrapperCol={{ span: 24 }}
+            // labelCol={{ span: 24 }}
+            // wrapperCol={{ span: 24 }}
+            layout="vertical"
             form={form}
           >
             <div className="cms-wrapper--title">CMS</div>
             <HeaderForm />
             <BodyForm />
-            <FooterForm />
+            <FooterForm footerListCardWatch={footerListCardWatch} form={form} />
           </Form>
           <Button
             onClick={() => form.submit()}

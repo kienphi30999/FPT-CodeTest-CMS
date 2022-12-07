@@ -90,7 +90,7 @@ const HeaderForm = () => {
                 <Form.ErrorList errors={errors} />
                 {fields.map((data, index) => {
                   return (
-                    <Space size={10} align="center">
+                    <Space size={20} align="center">
                       <Form.Item
                         rules={[
                           {

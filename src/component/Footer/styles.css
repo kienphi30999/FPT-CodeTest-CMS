@@ -38,17 +38,21 @@
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .footer-wrapper .footer-body--card {
-  display: flex;
-  flex-direction: column;
   border: 1px solid #e6e8eb;
   border-radius: 13px;
+  width: 424px;
 }
 .footer-wrapper .footer-body--card img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
   border-radius: 8px 8px 0px 0px;
 }
 .footer-wrapper .footer-body--card--bot {
+  height: calc(100% - 245px);
   padding: 32px;
   background-color: #ffffff;
   box-shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
@@ -68,8 +72,13 @@
 .footer-wrapper .footer-body--card--bot .text3 {
   font-size: 14px;
   color: #556070;
-  width: 360px;
   margin-bottom: 20px;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .footer-wrapper .footer-body--card--bot .text4 {
   width: 173px;
